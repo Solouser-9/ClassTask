@@ -1,0 +1,288 @@
+@scope (.signup-page) {
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+:scope{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.signup-card {
+  background: #ffffff;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  padding: 32px;
+  gap: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+/* --- Left Section (Image Container) --- */
+.Image {
+  flex: 0.95;
+  background-color: #F4F5F7;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Right Section (Form Area) --- */
+.right-section {
+  flex: 1.05;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Logo Positioned Top Right */
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.logo-icon {
+  width: 26px;
+  height: 26px;
+  color: #3563E9;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+/* Header */
+.Header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1A1D1F;
+  margin-bottom: 8px;
+}
+
+.Header p {
+  font-size: 13px;
+  color: #6F767E;
+  margin-bottom: 28px;
+}
+
+/* Form Layout */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .input-group {
+  flex: 1;
+}
+
+/* Floating Border Label Inputs */
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 13px;
+  color: #1A1D1F;
+  border: 1px solid #D0D5DD;
+  border-radius: 6px;
+  outline: none;
+  background: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.input-group input::placeholder {
+  color: #909090;
+}
+
+.input-group input:focus {
+  border-color: #3563E9;
+}
+
+.input-group label {
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  background-color: #ffffff;
+  padding: 0 6px;
+  font-size: 12px;
+  color: #344054;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+/* Password Group Eye Toggle */
+.password-group .eye-icon-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #667085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Terms Checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.terms input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #3563E9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.terms label {
+  font-size: 13px;
+  color: #344054;
+}
+
+.link-btn {
+  color: #FF6868;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #3563E9;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2752cf;
+}
+
+/* Redirect Text */
+.login-redirect {
+  text-align: center;
+  font-size: 13px;
+  color: #6F767E;
+  margin-top: 2px;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 16px 0;
+  color: #A0A0A0;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #EAECF0;
+}
+
+.divider span {
+  padding: 0 16px;
+}
+
+/* Social Login Buttons */
+.social-login {
+  display: flex;
+  gap: 16px;
+}
+
+.social-btn {
+  flex: 1;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #7CA5FF;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.social-btn:hover {
+  background-color: #F8F9FA;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .signup-card {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .Image {
+    min-height: 350px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .Logo {
+    justify-content: flex-start;
+  }
+}
+}
